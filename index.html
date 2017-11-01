@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Perfect fit</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,14 +12,41 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
-      <h1>Example</h1>
+      <h1>Perfect Fit</h1>
+      <p id='message'></p>
+      <form id="sign-up">
+            <fieldset>
+              <h4>Sign up</h4>
+              <input type="text" name="credentials[email]" placeholder="Username">
+              <input type="password" name="credentials[password]" placeholder="Password">
+              <input type="password" name="credentials[password_confirmation]" placeholder="Password confirmation">
+              <input type="submit" name="submit" value="Sign up">
+            </fieldset>
+          </form>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
+          <form id="sign-in">
+            <fieldset>
+              <h4>Sign in</h4>
+              <input type="text" name="credentials[email]" placeholder="Username">
+              <input type="password" name="credentials[password]" placeholder="Password">
+              <input type="submit" name="submit" value="Sign in">
+            </fieldset>
+          </form>
+
+          <form id="change-password">
+            <fieldset>
+              <h4>Change password</h4>
+              <input type="password" name="passwords[old]" placeholder="Old password">
+              <input type="password" name="passwords[new]" placeholder="New password">
+              <input type="submit" name="submit" value="Change password">
+            </fieldset>
+          </form>
+
+          <form id="sign-out">
+            <fieldset>
+              <h4>Sign out</h4>
+              <input type="submit" name="submit" value="Sign out">
+            </fieldset>
+          </form>
     </body>
 </html>
