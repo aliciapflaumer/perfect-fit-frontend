@@ -1,2 +1,9 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body {
+  background-image: url('/img/171101_1200px_patrick-hendry-45138.png');
+  background-size: cover;
+  background-size: 100%;
+  color: #000;
+}
