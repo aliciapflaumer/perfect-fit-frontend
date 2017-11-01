@@ -49,5 +49,28 @@
             </fieldset>
           </form>
 
+          <form id="get-workouts">
+              <h4>Get all workouts</h4>
+              <fieldset>
+                <div id="get-workouts-button">
+                  <input type="submit" name="submit" value="Get all workouts">
+                </div>
+              </fieldset>
+            </form>
+          <div id="get-all-workouts-container">
+            <div id="workout-listing"></div>
+          </div>
+
+          <form id="create-workout">
+            <fieldset>
+              <h4>Create a workout</h4>
+               <input type="text" name="workout[name]" placeholder="Name">
+              <input type="text" name="workout[duration]" placeholder="Duration">
+              <input type="text" name="workout[repetitions]" placeholder="Repetitions">
+              <input type="text" name="workout[date]" placeholder="Date, ie: 2017-11-01">
+              <input type="submit" name="submit" value="Create workout">
+            </fieldset>
+          </form>
+
     </body>
 </html>

@@ -7,3 +7,18 @@ body {
   background-size: 100%;
   color: #000;
 }
+
+#sign-up, #sign-in,
+#change-password, #sign-out, #create-workout, #get-workouts {
+  display: none;
+}
+
+#workout-listing {
+  list-style: none;
+  text-decoration: none;
+}
+
+#get-all-workouts-container {
+  width: 100%;
+  height: 100%;
+}
