@@ -23,11 +23,30 @@ const onGetAllWorkouts = (event) => {
     .catch(ui.getWorkoutsFailure)
 }
 
+const onDeleteWorkout = (event) => {
+  event.preventDefault()
+  console.log('onDeleteWorkout events function reached!')
+  const id = getFormFields(event.target)
+  api.deleteWorkout(id.workout.id)
+    .then(ui.onDeleteWorkoutSuccess)
+    .catch(ui.onDeleteWorkoutFailure)
+}
+
+const onUpdateWorkout = (event) => {
+  event.preventDefault()
+  console.log('onUpdateWorkout events function re reached!')
+  const data = getFormFields(event.target)
+
+  api.updateWorkout(data)
+    .then(ui.onUpdateWorkoutSuccess)
+    .catch(ui.onUpdateWorkoutFailure)
+}
+
 const addHandlers = () => {
   $('#create-workout').on('submit', onCreateWorkout)
   $('#get-workouts').on('submit', onGetAllWorkouts)
-  // $('#delete-workout').on('submit', onDeleteWorkout)
-  // $('#update-workout').on('submit', onUpdateWorkout)
+  $('#delete-workout').on('submit', onDeleteWorkout)
+  $('#update-workout').on('submit', onUpdateWorkout)
 }
 
 module.exports = {

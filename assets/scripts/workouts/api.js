@@ -34,7 +34,34 @@ const getWorkouts = () => {
     })
 }
 
+const deleteWorkout = (id) => {
+  // console.log('deleteWorkout api function reached!')
+  return $.ajax({ // return ajax then set up, url, method, data
+    url: config.apiOrigin + '/workouts/' + id,
+    method: 'DELETE',
+    // add Token
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+
+const updateWorkout = (data) => {
+  console.log('updateWorkout api function reached!')
+  return $.ajax({
+    url: config.apiOrigin + '/workouts/' + data.workout.id,
+    method: 'PATCH',
+    // add Token
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
 module.exports = {
   createWorkout,
-  getWorkouts
+  getWorkouts,
+  deleteWorkout,
+  updateWorkout
 }

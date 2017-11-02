@@ -37,7 +37,7 @@ Client
 1.  [ ] Review [query-ajax-post](https://github.com/ga-wdi-boston/jquery-ajax-post)
 1.  [ DONE ] Create resource (curl then web app)
 1.  [ DONE ] Get all of their owned resources (curl then web app)
-1.  [ ] Delete single resource (curl then web app)
+1.  [ DONE ] Delete single resource (curl then web app)
 1.  [ ] Update single resource (curl then web app)
 
 ### Final Touches
