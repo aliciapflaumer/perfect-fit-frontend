@@ -4,7 +4,6 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 body {
   background-image: url('https://i.imgur.com/bJSSyF1.png');
   background-size: cover;
-  background-size: 100%;
   color: #000;
 }
 
@@ -24,7 +23,7 @@ body {
 }
 
 #get-all-workouts-container {
-  width: 50%;
+  width: 70%;
   height: 200px;
   background-color: #fff;
   border: 1px solid #000;
@@ -47,8 +46,14 @@ body {
 #get-all-workouts-container h4 {
     margin: 5% 0 2% 5%;
 }
+
+#get-workouts h4 {
+  margin: 5% 0 2% 5%;
+  color: #fff;
+}
+
 #get-workouts-button {
-  margin-left: 5%;
+  margin: 0 0 2% 5%;
 }
 
 #workouts fieldset {
@@ -59,6 +64,32 @@ body {
   margin-bottom: 2%;
 }
 
+#workout-forms {
+  margin-bottom: 5%;
+}
+
 #pw-signOut-row {
   margin-bottom: 5%;
+}
+
+// html {
+//   height: 100%;
+//   position: relative;
+// }
+
+footer {
+  margin-bottom: 1%;
+  color: #fff;
+  margin-left: 50%;
+  // bottom: 0;
+  // position: absolute;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #000;
 }

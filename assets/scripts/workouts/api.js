@@ -4,8 +4,8 @@ const config = require('../config')
 const store = require('../store')
 
 const createWorkout = (data) => {
-  console.log(data)
-  console.log('createWorkout api function reached!')
+  // console.log(data)
+  // console.log('createWorkout api function reached!')
   return $.ajax({
     url: config.apiOrigin + '/workouts/',
     method: 'POST',
@@ -47,7 +47,7 @@ const deleteWorkout = (id) => {
 }
 
 const updateWorkout = (data) => {
-  console.log('updateWorkout api function reached!')
+  // console.log('updateWorkout api function reached!')
   return $.ajax({
     url: config.apiOrigin + '/workouts/' + data.workout.id,
     method: 'PATCH',
