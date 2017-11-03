@@ -14,6 +14,7 @@ const createWorkoutSuccess = (response) => {
   $('#message').text('You have created a workout!').show().fadeOut(8000)
   $('#get-all-workouts-container').show()
   $('#update-workout').show()
+  $('#workout-listing').empty(id)
 }
 
 const createWorkoutFailure = (response) => {

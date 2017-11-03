@@ -51,10 +51,6 @@ const signInFailure = function (data) {
   $('#sign-up').show()
   $('#change-password').hide()
   $('#sign-out').hide()
-  // $('#get-books').hide()
-  // $('#create-book').hide()
-  // $('#update-book').hide()
-  // $('#delete-book').hide()
   resetForm($('#sign-in'))
 }
 
