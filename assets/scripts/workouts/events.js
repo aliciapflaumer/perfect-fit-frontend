@@ -7,8 +7,8 @@ const getFormFields = require(`../../../lib/get-form-fields`)
 const onCreateWorkout = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
-  console.log(data)
-  console.log('onCreateWorkout events function reached!')
+  // console.log(data)
+  // console.log('onCreateWorkout events function reached!')
   api.createWorkout(data)
     .then(ui.createWorkoutSuccess)
     .catch(ui.createWorkoutFailure)
@@ -25,7 +25,7 @@ const onGetAllWorkouts = (event) => {
 
 const onDeleteWorkout = (event) => {
   event.preventDefault()
-  console.log('onDeleteWorkout events function reached!')
+  // console.log('onDeleteWorkout events function reached!')
   const id = getFormFields(event.target)
   api.deleteWorkout(id.workout.id)
     .then(ui.onDeleteWorkoutSuccess)
@@ -34,7 +34,7 @@ const onDeleteWorkout = (event) => {
 
 const onUpdateWorkout = (event) => {
   event.preventDefault()
-  console.log('onUpdateWorkout events function re reached!')
+  // console.log('onUpdateWorkout events function re reached!')
   const data = getFormFields(event.target)
 
   api.updateWorkout(data)

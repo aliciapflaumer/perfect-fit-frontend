@@ -9,7 +9,7 @@ const resetForm = function resetForm ($form) {
 }
 
 const createWorkoutSuccess = (response) => {
-  console.log('creatWorkoutSuccess ui reached!')
+  // console.log('creatWorkoutSuccess ui reached!')
   resetForm($('#create-workout'))
   $('#message').text('You have created a workout!').show().fadeOut(8000)
   $('#get-all-workouts-container').show()
@@ -21,13 +21,14 @@ const createWorkoutFailure = (response) => {
 }
 
 const getWorkoutsSuccess = (data) => {
-  console.log('getWorkoutSuccess ui reached!')
+  // console.log('getWorkoutSuccess ui reached!')
   // Linter expects ===, but works with ==
   if (data.workouts == '') {
     $('#message').text('There seems to be no list of workouts. Try creating one.').show().fadeOut(8000)
     // $('#update-workout').show()
   } else {
     const showWorkoutList = showWorkoutTemplate({ workouts: data.workouts })
+    // $('#get-all-workouts-container').show()
     $('#workout-listing').empty()
     $('#workout-listing').show()
     $('#workout-listing').append(showWorkoutList)
@@ -40,26 +41,26 @@ const getWorkoutsFailure = (response) => {
 }
 
 const onDeleteWorkoutSuccess = (id) => {
-  console.log('onDeleteWorkoutSuccess ui reached!').show().fadeOut(8000)
+  // console.log('onDeleteWorkoutSuccess ui reached!').show().fadeOut(8000)
   resetForm($('#delete-workout'))
   $('#message').text('You have deleted a workout!').show().fadeOut(8000)
   $('#workout-listing').empty(id)
 }
 
 const onDeleteWorkoutFailure = (response) => {
-  console.log('onDeleteWorkoutFailure ui reached!')
+  // console.log('onDeleteWorkoutFailure ui reached!')
   $('#message').text('Unable to delete a workout! Did you type the ID number correctly? Try again.').show().fadeOut(8000)
 }
 
 const onUpdateWorkoutSuccess = (id) => {
-  console.log('onUpdateWorkoutSuccess ui reached!')
+  // console.log('onUpdateWorkoutSuccess ui reached!')
   resetForm($('#update-workout'))
   $('#message').text('You have have updated your workout!').show().fadeOut(8000)
   $('workout-listing').empty(id)
 }
 
 const onUpdateWorkoutFailure = (id) => {
-  console.log('onUpdateWorkoutFailure ui reached!')
+  // console.log('onUpdateWorkoutFailure ui reached!')
   $('#message').text('Unable to update your workout. Try again.').show().fadeOut(8000)
 }
 

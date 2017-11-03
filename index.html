@@ -12,18 +12,22 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
-      <h1>Perfect Fit</h1>
-      <p id='message'></p>
-      <form id="sign-up">
-            <fieldset>
-              <h4>Sign up</h4>
-              <input type="text" name="credentials[email]" placeholder="Username">
-              <input type="password" name="credentials[password]" placeholder="Password">
-              <input type="password" name="credentials[password_confirmation]" placeholder="Password confirmation">
-              <input type="submit" name="submit" value="Sign up">
-            </fieldset>
-          </form>
+      <h1 id="app-name">Perfect Fit</h1>
 
+      <div class="row">
+        <div class="col-sm-2">
+          <form id="sign-up">
+                <fieldset>
+                  <h4>Sign up</h4>
+                  <input type="text" name="credentials[email]" placeholder="Username">
+                  <input type="password" name="credentials[password]" placeholder="Password">
+                  <input type="password" name="credentials[password_confirmation]" placeholder="Password confirmation">
+                  <input type="submit" name="submit" value="Sign up">
+                </fieldset>
+              </form>
+        </div>
+
+        <div class="col-sm-2">
           <form id="sign-in">
             <fieldset>
               <h4>Sign in</h4>
@@ -32,7 +36,11 @@
               <input type="submit" name="submit" value="Sign in">
             </fieldset>
           </form>
+        </div>
+      </div>
 
+      <div class="row" id="pw-signOut-row">
+        <div class="col-sm-4">
           <form id="change-password">
             <fieldset>
               <h4>Change password</h4>
@@ -41,26 +49,37 @@
               <input type="submit" name="submit" value="Change password">
             </fieldset>
           </form>
+        </div>
 
+        <div class="col-sm-4">
           <form id="sign-out">
             <fieldset>
               <h4>Sign out</h4>
               <input type="submit" name="submit" value="Sign out">
             </fieldset>
           </form>
+        </div>
+      </div>
+      <p id='message'></p>
 
-          <form id="get-workouts">
-              <h4>Get all workouts</h4>
-              <fieldset>
-                <div id="get-workouts-button">
-                  <input type="submit" name="submit" value="Get all workouts">
-                </div>
-              </fieldset>
-            </form>
+      <div class="row">
+        <div class="col-sm-8">
           <div id="get-all-workouts-container">
+            <form id="get-workouts">
+                <h4>Get all workouts</h4>
+                <fieldset>
+                  <div id="get-workouts-button">
+                    <input type="submit" name="submit" value="Get all workouts">
+                  </div>
+                </fieldset>
+              </form>
             <div id="workout-listing"></div>
           </div>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-sm-2" id="workouts">
           <form id="create-workout">
             <fieldset>
               <h4>Create a workout</h4>
@@ -71,7 +90,9 @@
                <input type="submit" name="submit" value="Create workout">
             </fieldset>
           </form>
+        </div>
 
+        <div class="col-sm-2" id="workouts">
           <form id="delete-workout">
             <fieldset>
               <h4>Delete a workout</h4>
@@ -79,7 +100,9 @@
               <input type="submit" name="submit" value="Delete a workout">
             </fieldset>
           </form>
+        </div>
 
+        <div class="col-sm-2" id="workouts">
           <form id="update-workout">
             <fieldset>
               <h4>Update a workout</h4>
@@ -90,6 +113,8 @@
                <input type="submit" name="submit" value="Update workout">
             </fieldset>
           </form>
+        </div>
 
+      </div>
     </body>
 </html>
