@@ -65,7 +65,7 @@
       <div class="row">
         <div class="col-sm-8">
           <form id="get-workouts">
-              <h4>Get all workouts</h4>
+              <h4>My workout list</h4>
               <fieldset>
                 <div id="get-workouts-button">
                   <input type="submit" name="submit" value="Get all workouts">
@@ -82,11 +82,11 @@
         <div class="col-sm-2" id="workouts">
           <form id="create-workout">
             <fieldset>
-              <h4>Create a workout</h4>
-               <input type="text" name="workout[name]" placeholder="Name">
-               <input type="text" name="workout[duration]" placeholder="Duration">
-               <input type="text" name="workout[repetitions]" placeholder="Repetitions">
-               <input type="text" name="workout[date]" placeholder="Date, ie: 2017-11-01">
+              <h4>Create an exercise</h4>
+               Name: <input type="text" name="workout[name]" placeholder="Weights"><br>
+               Duration: <input type="text" name="workout[duration]" placeholder="30"><br>
+               Repetions: <input type="text" name="workout[repetitions]" placeholder="5"><br>
+               Date: <input type="text" name="workout[date]" placeholder="2017-11-01">
                <input type="submit" name="submit" value="Create workout">
             </fieldset>
           </form>
@@ -95,8 +95,8 @@
         <div class="col-sm-2" id="workouts">
           <form id="delete-workout">
             <fieldset>
-              <h4>Delete a workout</h4>
-               <input type="text" name="workout[id]" id="id" placeholder="Id">
+              <h4>Delete an exercise</h4>
+               Exercise Id: <input type="text" name="workout[id]" id="id" placeholder="1">
               <input type="submit" name="submit" value="Delete a workout">
             </fieldset>
           </form>
@@ -105,12 +105,12 @@
         <div class="col-sm-2" id="workouts">
           <form id="update-workout">
             <fieldset>
-              <h4>Update a workout</h4>
-               <input type="text" name="workout[id]" id="workout-id-update" placeholder="Workout Id here">
-               <input type="text" name="workout[name]" placeholder="Name">
-               <input type="text" name="workout[duration]" placeholder="Duration">
-               <input type="text" name="workout[repetitions]" placeholder="Repetitions">
-               <input type="text" name="workout[date]" placeholder="Date, ie: 2017-11-01">
+              <h4>Update an exercise</h4>
+               Exercise Id: <input type="text" name="workout[id]" id="workout-id-update" placeholder="1"><br>
+               (New) Name: <input type="text" name="workout[name]" placeholder="Weights"><br>
+               (New) Duration: <input type="text" name="workout[duration]" placeholder="30"><br>
+               (New) Repetions: <input type="text" name="workout[repetitions]" placeholder="5"><br>
+               (New) Date: <input type="text" name="workout[date]" placeholder="2017-11-01">
                <input type="submit" name="submit" value="Update workout">
             </fieldset>
           </form>

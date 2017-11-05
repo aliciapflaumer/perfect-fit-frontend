@@ -8,7 +8,7 @@ const resetForm = function resetForm ($form) {
     .removeAttr('checked').removeAttr('selected')
 }
 
-const createWorkoutSuccess = (response) => {
+const createWorkoutSuccess = (response, id) => {
   // console.log('creatWorkoutSuccess ui reached!')
   resetForm($('#create-workout'))
   $('#message').text('You have created a workout!').show().fadeOut(8000)
@@ -57,7 +57,7 @@ const onUpdateWorkoutSuccess = (id) => {
   // console.log('onUpdateWorkoutSuccess ui reached!')
   resetForm($('#update-workout'))
   $('#message').text('You have have updated your workout!').show().fadeOut(8000)
-  $('workout-listing').empty(id)
+  $('#workout-listing').empty(id)
 }
 
 const onUpdateWorkoutFailure = (id) => {
