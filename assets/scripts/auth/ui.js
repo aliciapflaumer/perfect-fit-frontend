@@ -66,7 +66,7 @@ const changePasswordFailure = function (data) {
   resetForm($('#sign-up'))
 }
 
-const signOutSuccess = function () {
+const signOutSuccess = function (id) {
   // console.log('Successfully signed out')
   $('#message').text('Successfully signed out').show().fadeOut(8000)
   store.user = null // empty store
@@ -75,6 +75,7 @@ const signOutSuccess = function () {
   $('#update-workout').hide()
   $('#delete-workout').hide()
   $('#get-all-workouts-container').hide()
+  $('#workout-listing').empty(id)
 }
 
 const signOutFailure = function (data) {
