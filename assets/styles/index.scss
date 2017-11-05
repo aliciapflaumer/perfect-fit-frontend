@@ -3,18 +3,38 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 body {
   background-image: url('https://i.imgur.com/bJSSyF1.png');
+  background-repeat: no-repeat;
   background-size: cover;
   color: #000;
+  background-color: #000;
 }
 
-#app-name, #message, #sign-up h4, #sign-in h4,
+#message {
+  color: #fff;
+}
+
+#workout-message {
+  color: #fff;
+}
+
+#app-name {
+  text-align: center;
+}
+
+#app-name, #sign-up h4, #sign-in h4,
 #change-password h4, #sign-out h4 {
-    color: #fff;
+    color: #000;
 }
 
 #sign-up, #sign-in,
 #change-password, #sign-out, #create-workout, #get-workouts, #delete-workout, #update-workout, #get-all-workouts-container {
   display: none;
+}
+#sign-up, #sign-in, #change-password, #sign-out {
+    padding: 5px;
+}
+#sign-up, #change-password {
+    padding-right: 20px;
 }
 
 #workout-listing {
@@ -23,7 +43,7 @@ body {
 }
 
 #get-all-workouts-container {
-  width: 70%;
+  width: 50%;
   height: 200px;
   background-color: #fff;
   border: 1px solid #000;
@@ -68,21 +88,21 @@ body {
   margin-bottom: 5%;
 }
 
-#pw-signOut-row {
-  margin-bottom: 5%;
-}
-
-// html {
-//   height: 100%;
-//   position: relative;
+// #pw-signOut-row {
+//   margin-bottom: 5%;
 // }
+
+html {
+  height: 100%;
+  position: relative;
+}
 
 footer {
   margin-bottom: 1%;
   color: #fff;
   margin-left: 50%;
-  // bottom: 0;
-  // position: absolute;
+  bottom: 0;
+  position: absolute;
 }
 
 footer a {
@@ -91,5 +111,14 @@ footer a {
 }
 
 footer a:hover {
-  color: #000;
+  color: #e2c800;
+}
+
+@media only screen and (max-width: 500px) {
+  footer {
+    margin-left: 10%;
+  }
+  #workouts fieldset {
+    margin: 5%;
+  }
 }
