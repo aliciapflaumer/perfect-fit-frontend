@@ -18,7 +18,7 @@ const createWorkoutSuccess = (response) => {
 }
 
 const createWorkoutFailure = (response) => {
-  $('#message').text('Creating a workout failed. Try again.').show().fadeOut(8000)
+  $('#message').text('Creating a workout failed. Did you fill in all fields completely?').show().fadeOut(8000)
 }
 
 const getWorkoutsSuccess = (data) => {
@@ -38,7 +38,7 @@ const getWorkoutsSuccess = (data) => {
 }
 
 const getWorkoutsFailure = (response) => {
-  $('#message').text('Getting your workouts failed. Try again.').show().fadeOut(8000)
+  $('#message').text('Getting your workouts failed. Did you create a workout yet?').show().fadeOut(8000)
 }
 
 const onDeleteWorkoutSuccess = (id) => {
@@ -62,7 +62,7 @@ const onUpdateWorkoutSuccess = (id) => {
 
 const onUpdateWorkoutFailure = (id) => {
   // console.log('onUpdateWorkoutFailure ui reached!')
-  $('#message').text('Unable to update your workout. Try again.').show().fadeOut(8000)
+  $('#message').text('Unable to update your workout. Did you fill in all fields completely?').show().fadeOut(8000)
 }
 
 module.exports = {

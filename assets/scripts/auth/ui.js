@@ -36,7 +36,7 @@ const signInSuccess = function (data) {
   $('#get-all-workouts-container').show()
   // console.log(data)
   // console.log('Arrived at Sign in success!')
-  $('#message').text('Successfully signed in').fadeOut(8000).show()
+  $('#message').text('Successfully signed in').show().fadeOut(8000)
   $('#update-workout').show()
   store.user = data.user
   // console.log('store.user console log data is ' + data.user)
