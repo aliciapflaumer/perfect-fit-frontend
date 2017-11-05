@@ -45,4 +45,4 @@ A few errors popped up along the way, for which I opened issues for on the queue
 
 ## Screenshot of app
 
-![screenshot](https://i.imgur.com/xa0xvZM.png)
+![screenshot](https://i.imgur.com/GoB0PjJ.png)
