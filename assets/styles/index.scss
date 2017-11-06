@@ -1,5 +1,6 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 body {
   background-image: url('https://i.imgur.com/bJSSyF1.png');
@@ -11,6 +12,7 @@ body {
 
 #message {
   color: #fff;
+  font-family: 'Abel', sans-serif;
 }
 
 #workout-message {
@@ -19,6 +21,7 @@ body {
 
 #app-name {
   text-align: center;
+  font-family: 'Abel', sans-serif;
 }
 
 #app-name, #sign-up h4, #sign-in h4,
@@ -29,6 +32,7 @@ body {
 #sign-up, #sign-in,
 #change-password, #sign-out, #create-workout, #get-workouts, #delete-workout, #update-workout, #get-all-workouts-container {
   display: none;
+  font-family: 'Abel', sans-serif;
 }
 #sign-up, #sign-in, #change-password, #sign-out {
     padding: 5px;
@@ -98,6 +102,8 @@ html {
 }
 
 footer {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
   margin-bottom: 1%;
   color: #fff;
   margin-left: 50%;
@@ -116,9 +122,12 @@ footer a:hover {
 
 @media only screen and (max-width: 500px) {
   footer {
-    margin-left: 10%;
+    margin-left: 5%;
   }
   #workouts fieldset {
     margin: 5%;
+  }
+  .update-workout {
+    margin-bottom: 20px;
   }
 }

@@ -27,7 +27,9 @@ To stay organized, I started with creating my usual checklist and workflow chart
 
 ## Wishlist
 
-I would like to build an actual run tracker, similar to the big names out there Nike, RunKeeper, and MapMyRun. That'll take some more learning.
+- Display workout list in calendar form
+- Show BMI calculator
+- Ability to share on social (ie. Facebook)
 
 ## Issues I encountered
 A few errors popped up along the way, for which I opened issues for on the queue – and the consultants were good guiding me in the right direction, and helping to solve the problem(s). One though was troubling, the dreaded 500 server error on localhost – that I encountered similiarly during project 2 – I filed an issue but I troubleshooted and solved on my own, documenting my progress along the way – in 5 hours.
