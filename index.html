@@ -3,6 +3,7 @@
     <head>
       <title>Perfect fit</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <link rel="stylesheet" type="text/css" href="assets/styles/jquery-ui.min.css"> -->
 
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -10,6 +11,7 @@
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+      <!-- <script src="assets/scripts/jquery-ui.js"></script> -->
     </head>
     <body class="container-fluid">
 
@@ -19,9 +21,9 @@
           <form id="sign-up" class="navbar-left">
                 <fieldset>
                   <h4>Sign up</h4>
-                  <input type="text" name="credentials[email]" placeholder="Username">
-                  <input type="password" name="credentials[password]" placeholder="Password">
-                  <input type="password" name="credentials[password_confirmation]" placeholder="Password confirmation">
+                  <input type="text" name="credentials[email]" placeholder="Username" required>
+                  <input type="password" name="credentials[password]" placeholder="Password" required>
+                  <input type="password" name="credentials[password_confirmation]" placeholder="Password confirmation" required>
                   <input type="submit" name="submit" value="Sign up">
                 </fieldset>
               </form>
@@ -29,8 +31,8 @@
           <form id="sign-in" class="navbar-left">
             <fieldset>
               <h4>Sign in</h4>
-              <input type="text" name="credentials[email]" placeholder="Username">
-              <input type="password" name="credentials[password]" placeholder="Password">
+              <input type="text" name="credentials[email]" placeholder="Username" required>
+              <input type="password" name="credentials[password]" placeholder="Password" required>
               <input type="submit" name="submit" value="Sign in">
             </fieldset>
           </form>
@@ -38,8 +40,8 @@
           <form id="change-password" class="navbar-left">
             <fieldset>
               <h4>Change password</h4>
-              <input type="password" name="passwords[old]" placeholder="Old password">
-              <input type="password" name="passwords[new]" placeholder="New password">
+              <input type="password" name="passwords[old]" placeholder="Old password" required>
+              <input type="password" name="passwords[new]" placeholder="New password" required>
               <input type="submit" name="submit" value="Change password">
             </fieldset>
           </form>
@@ -47,7 +49,7 @@
           <form id="sign-out" class="navbar-left">
             <fieldset>
               <h4>Sign out</h4>
-              <input type="submit" name="submit" value="Sign out">
+              <input type="submit" name="submit" value="Sign out" required>
             </fieldset>
           </form>
       </nav>
@@ -77,10 +79,10 @@
           <form id="create-workout">
             <fieldset>
               <h4>Create an exercise</h4>
-               Name: <input type="text" name="workout[name]" placeholder="Weights"><br>
-               Duration: <input type="text" name="workout[duration]" placeholder="30"><br>
-               Repetions: <input type="text" name="workout[repetitions]" placeholder="5"><br>
-               Date: <input type="text" name="workout[date]" placeholder="2017-11-01">
+               Name: <input type="text" name="workout[name]" placeholder="Weights" required><br>
+               Duration: <input type="text" name="workout[duration]" placeholder="30" required><br>
+               Repetions: <input type="text" name="workout[repetitions]" placeholder="5" required><br>
+               Date: <input type="text" id="datepicker" name="workout[date]" placeholder="2017-11-01" required>
                <input type="submit" name="submit" value="Create workout">
             </fieldset>
           </form>
@@ -90,7 +92,7 @@
           <form id="delete-workout">
             <fieldset>
               <h4>Delete an exercise</h4>
-               Exercise Id: <input type="text" name="workout[id]" id="id" placeholder="1">
+               Exercise Id: <input type="text" name="workout[id]" id="id" placeholder="1" required>
               <input type="submit" name="submit" value="Delete a workout">
             </fieldset>
           </form>
@@ -100,11 +102,11 @@
           <form id="update-workout">
             <fieldset>
               <h4>Update an exercise</h4>
-               Exercise Id: <input type="text" name="workout[id]" id="workout-id-update" placeholder="1"><br>
-               (New) Name: <input type="text" name="workout[name]" placeholder="Weights"><br>
-               (New) Duration: <input type="text" name="workout[duration]" placeholder="30"><br>
-               (New) Repetions: <input type="text" name="workout[repetitions]" placeholder="5"><br>
-               (New) Date: <input type="text" name="workout[date]" placeholder="2017-11-01">
+               Exercise Id: <input type="text" name="workout[id]" id="workout-id-update" placeholder="1" required><br>
+               (New) Name: <input type="text" name="workout[name]" placeholder="Weights" required><br>
+               (New) Duration: <input type="text" name="workout[duration]" placeholder="30" required><br>
+               (New) Repetions: <input type="text" name="workout[repetitions]" placeholder="5" required><br>
+               (New) Date: <input type="text" name="workout[date]" placeholder="2017-11-01" required>
                <input type="submit" name="submit" value="Update workout">
             </fieldset>
           </form>
@@ -117,5 +119,6 @@
       <footer id="footer">Made by Alicia Pflaumer | Follow her code on <a href="https://github.com/aliciapflaumer">Github</a></footer>
         </div>
       </div>
+
     </body>
 </html>

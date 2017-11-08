@@ -13,6 +13,14 @@ body {
   background-color: $black;
 }
 
+input:invalid {
+  border: 2px dashed $gold;
+}
+
+input:valid {
+  border: 2px solid $black;
+}
+
 #message {
   color: $white;
   font-family: $font-family;
