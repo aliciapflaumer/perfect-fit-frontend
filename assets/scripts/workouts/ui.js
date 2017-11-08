@@ -62,7 +62,7 @@ const onUpdateWorkoutSuccess = (id) => {
 
 const onUpdateWorkoutFailure = (id) => {
   // console.log('onUpdateWorkoutFailure ui reached!')
-  $('#workout-message').text('Unable to update your workout. Did you fill in all fields completely?').show().fadeOut(8000)
+  $('#workout-message').text('Unable to update a workout. Is the exercise ID correct?').show().fadeOut(8000)
 }
 
 module.exports = {
