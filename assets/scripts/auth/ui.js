@@ -29,19 +29,27 @@ const signInSuccess = function (data) {
   $('#sign-up').hide()
   $('#change-password').show()
   $('#sign-out').show()
+  $('#create-plan').show()
+  $('#get-plans').show()
+  $('#update-plan').show()
+  $('#delete-plan').show()
+  $('#get-all-plans-container').show()
+
   $('#create-workout').show()
   $('#get-workouts').show()
   $('#update-workout').show()
   $('#delete-workout').show()
   $('#get-all-workouts-container').show()
+
   // console.log(data)
   // console.log('Arrived at Sign in success!')
   $('#message').text('Successfully signed in').show().fadeOut(8000)
+  $('#update-plan').show()
   $('#update-workout').show()
   store.user = data.user
   // console.log('store.user console log data is ' + data.user)
   resetForm($('#sign-in'))
-  resetForm($('#update-workout'))
+  resetForm($('#update-plan'))
 }
 
 const signInFailure = function (data) {
@@ -70,6 +78,12 @@ const signOutSuccess = function (id) {
   // console.log('Successfully signed out')
   $('#message').text('Successfully signed out').show().fadeOut(8000)
   store.user = null // empty store
+  $('#create-plan').hide()
+  $('#get-plans').hide()
+  $('#update-plan').hide()
+  $('#delete-plan').hide()
+  $('#get-all-plans-container').hide()
+  $('#plan-listing').empty(id)
   $('#create-workout').hide()
   $('#get-workouts').hide()
   $('#update-workout').hide()

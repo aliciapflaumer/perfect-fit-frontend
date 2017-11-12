@@ -1,0 +1,14 @@
+{{#each plans as |plans|}}
+
+<ul id="plan-listing" data-id="{{plans.id}}">
+  <li>Plan ID: {{plans.id}}</li>
+  <li>Name: {{plans.name}}</li>
+  <li>Date: {{plans.date}}</li>
+  <li>Location: {{plans.location}}</li>
+  <li>Difficulty: {{plans.difficulty}}</li>
+  <li>
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createExerciseModal">Create an exercise</button>
+    <!-- <button type="button" data-target="#workout-message">Create an exercise</button> -->
+  </li>
+</ul>
+{{/each}}

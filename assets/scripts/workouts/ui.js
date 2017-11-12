@@ -9,7 +9,7 @@ const resetForm = function resetForm ($form) {
 }
 
 const createWorkoutSuccess = (response, id) => {
-  // console.log('creatWorkoutSuccess ui reached!')
+  console.log('creatWorkoutSuccess ui reached!')
   resetForm($('#create-workout'))
   $('#workout-message').text('You have created a workout!').show().fadeOut(8000)
   $('#get-all-workouts-container').show()
@@ -25,7 +25,7 @@ const getWorkoutsSuccess = (data) => {
   // console.log('getWorkoutSuccess ui reached!')
   // Linter expects ===, but works with ==
   if (data.workouts == '') {
-    $('#message').text('There seems to be no list of workouts. Try creating one.').show().fadeOut(8000)
+    $('#workout-message').text('There seems to be no list of workouts. Try creating one.').show().fadeOut(8000)
     // $('#update-workout').show()
   } else {
     const showWorkoutList = showWorkoutTemplate({ workouts: data.workouts })
@@ -33,7 +33,7 @@ const getWorkoutsSuccess = (data) => {
     $('#workout-listing').empty()
     $('#workout-listing').show()
     $('#workout-listing').append(showWorkoutList)
-    $('#message').text('You now have your list of workouts! Let\'s get started!').show().fadeOut(8000)
+    $('#workout-message').text('You now have your list of workouts! Let\'s get started!').show().fadeOut(8000)
   }
 }
 
