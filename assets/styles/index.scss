@@ -31,6 +31,16 @@ input:valid {
   font-family: $font-family;
 }
 
+#create-workout-message {
+  color: $black;
+  font-family: $font-family;
+}
+
+#get-workout-message {
+  color: $white;
+  font-family: $font-family;
+}
+
 #plan-message {
   color: $white;
 }

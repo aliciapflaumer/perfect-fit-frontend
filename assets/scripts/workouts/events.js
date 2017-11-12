@@ -8,7 +8,7 @@ const onCreateWorkout = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
   // console.log(data)
-  console.log('onCreateWorkout events function reached!')
+  // console.log('onCreateWorkout events function reached!')
   api.createWorkout(data)
     .then(ui.createWorkoutSuccess)
     .catch(ui.createWorkoutFailure)

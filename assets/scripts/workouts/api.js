@@ -4,8 +4,8 @@ const config = require('../config')
 const store = require('../store')
 
 const createWorkout = (data, id) => {
-  console.log(data)
-  console.log('createWorkout api function reached!')
+  // console.log(data)
+  // console.log('createWorkout api function reached!')
   return $.ajax({
     url: config.apiOrigin + '/workouts/',
     method: 'POST',
