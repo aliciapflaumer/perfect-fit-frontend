@@ -28,6 +28,21 @@ input:valid {
 
 #workout-message {
   color: $white;
+  font-family: $font-family;
+}
+
+#create-workout-message {
+  color: $black;
+  font-family: $font-family;
+}
+
+#get-workout-message {
+  color: $white;
+  font-family: $font-family;
+}
+
+#plan-message {
+  color: $white;
 }
 
 #app-name {
@@ -41,7 +56,8 @@ input:valid {
 }
 
 #sign-up, #sign-in,
-#change-password, #sign-out, #create-workout, #get-workouts, #delete-workout, #update-workout, #get-all-workouts-container {
+#change-password, #sign-out, #create-plan, #get-plans, #delete-plan, #update-plan, #get-all-plans-container,
+#create-workout, #get-workouts, #delete-workout, #update-workout, #get-all-workouts-container {
   display: none;
   font-family: $font-family;
 }
@@ -50,6 +66,74 @@ input:valid {
 }
 #sign-up, #change-password {
     padding-right: 20px;
+}
+
+// begin Plan styles
+#create-plan {
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 5px;
+  width: 300px;
+}
+
+#plan-listing {
+  list-style: none;
+  text-decoration: none;
+}
+
+#get-all-plans-container {
+  width: 50%;
+  height: 200px;
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 5px;
+  overflow-y: auto;
+  margin-bottom: 5%;
+}
+
+#create-plan, #delete-plan, #update-plan {
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 5px;
+  width: 300px;
+}
+
+#plans {
+  margin-right: 10%;
+}
+
+#get-all-plans-container h4 {
+    margin: 5% 0 2% 5%;
+}
+
+#get-plans h4 {
+  margin: 5% 0 2% 5%;
+  color: $white;
+}
+
+#get-plans-button {
+  margin: 0 0 2% 5%;
+}
+
+#plans fieldset {
+  margin: 5%;
+}
+
+#plans input {
+  margin-bottom: 2%;
+}
+
+#plan-forms {
+  margin-bottom: 5%;
+}
+
+// Begin workouts styles
+
+#create-workout {
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 5px;
+  width: 300px;
 }
 
 #workout-listing {
@@ -103,10 +187,6 @@ input:valid {
   margin-bottom: 5%;
 }
 
-// #pw-signOut-row {
-//   margin-bottom: 5%;
-// }
-
 html {
   height: 100%;
   position: relative;
@@ -135,10 +215,10 @@ footer a:hover {
   footer {
     margin-left: 5%;
   }
-  #workouts fieldset {
+  #plans fieldset {
     margin: 5%;
   }
-  .update-workout {
+  .update-plan {
     margin-bottom: 20px;
   }
 }

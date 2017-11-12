@@ -3,11 +3,11 @@
 const config = require('../config')
 const store = require('../store')
 
-const createWorkout = (data, id) => {
+const createPlan = (data) => {
   // console.log(data)
-  // console.log('createWorkout api function reached!')
+  // console.log('createPlan api function reached!')
   return $.ajax({
-    url: config.apiOrigin + '/workouts/',
+    url: config.apiOrigin + '/plans/',
     method: 'POST',
     headers: {
       Authorization: 'Token token=' + store.user.token
@@ -15,29 +15,29 @@ const createWorkout = (data, id) => {
     data
   })
     .then((response) => {
-      store.workouts = response.workouts
+      store.plan = response.plan
     })
 }
 
-const getWorkouts = () => {
-  // console.log('getWorkouts api function reached!')
+const getPlans = () => {
+  // console.log('getPlans api function reached!')
   return $.ajax({
-    url: config.apiOrigin + '/workouts/',
+    url: config.apiOrigin + '/plans/',
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token
     }
   })
     .then((response) => {
-      store.workouts = response.workouts
+      store.plans = response.plans
       return store
     })
 }
 
-const deleteWorkout = (id) => {
-  // console.log('deleteWorkout api function reached!')
+const deletePlan = (id) => {
+  // console.log('deletePlan api function reached!')
   return $.ajax({ // return ajax then set up, url, method, data
-    url: config.apiOrigin + '/workouts/' + id,
+    url: config.apiOrigin + '/plans/' + id,
     method: 'DELETE',
     // add Token
     headers: {
@@ -46,10 +46,10 @@ const deleteWorkout = (id) => {
   })
 }
 
-const updateWorkout = (data) => {
-  // console.log('updateWorkout api function reached!')
+const updatePlan = (data) => {
+  // console.log('updatePlan api function reached!')
   return $.ajax({
-    url: config.apiOrigin + '/workouts/' + data.workout.id,
+    url: config.apiOrigin + '/plans/' + data.plan.id,
     method: 'PATCH',
     // add Token
     headers: {
@@ -60,8 +60,8 @@ const updateWorkout = (data) => {
 }
 
 module.exports = {
-  createWorkout,
-  getWorkouts,
-  deleteWorkout,
-  updateWorkout
+  createPlan,
+  getPlans,
+  deletePlan,
+  updatePlan
 }
