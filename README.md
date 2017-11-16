@@ -7,7 +7,7 @@ Perfect Fit is an exercise log app that allows users to keep a schedule of their
 [Perfect Fit deployed app](https://aliciapflaumer.github.io/perfect-fit-frontend/)
 
 ## Deployed backend on Heroku
-https://polar-hollows-34545.herokuapp.com/
+https://perfect-fit.herokuapp.com/
 
 ## Link to front and back end repos
 
