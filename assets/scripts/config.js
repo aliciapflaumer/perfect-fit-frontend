@@ -2,7 +2,7 @@
 
 const config = {
   apiOrigins: {
-    production: 'https://polar-hollows-34545.herokuapp.com'
+    production: 'https://perfect-fit.herokuapp.com'
   }
 }
 
